@@ -51,10 +51,7 @@ const Login = ({closelogin}) => {
                   {Password ?   <BiShowAlt />  :  <BiSolidHide />}
                     </div>
             </div>
-            <div className={styles.input}>
-                <a href="">Forget your password</a>
-
-            </div>
+           
             
             <div className={styles.input}><button>Register</button></div>
              <div className={styles.input}  onClick={handleregister}>

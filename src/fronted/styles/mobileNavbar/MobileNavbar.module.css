@@ -37,12 +37,25 @@ transform: rotate(10deg);
     width: 100%;
     color: white;
     padding:0px 20px;
-    line-height: 70px;
+    line-height: 65px;
     text-decoration: none;
     font-size: 20px;
     
 }
-.nav .navlinks hr{
+
+.navlinks ul li ul li a{
+  line-height: 50px;
+}
+.navlinks ul li  .drop{
+  display: flex;
+  align-items: center;
+  padding: 0px 10px 0px 0px;
+}
+.navlinks ul li .drop svg{
+  font-size: 24px;
+  cursor: pointer;
+}
+ .navlinks hr{
     height: 1px;
     color: #777;
     background-color: #777;

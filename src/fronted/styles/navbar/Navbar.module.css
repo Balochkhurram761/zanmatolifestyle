@@ -7,7 +7,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 3px 26px;
-  
+
     z-index: 1;
 }
 .Navbar img{
@@ -51,6 +51,29 @@
 .Navbar .navlinks ul li a.active::after {
     transform: translateX(0);
 }
+.Navbar .navlinks ul li ul {
+    width: 300px;
+    position: absolute;
+    top: 27px;
+   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+   background-color:black;
+   display: flex;
+   flex-direction: column;
+   line-height: 40px;
+   display: none;
+   padding: 10px 0px;
+   transition: all 0.3s ease-in-out;
+   opacity: 0;
+}
+.Navbar .navlinks ul:hover li ul {
+    display: block;
+    opacity: 1;
+    
+
+}
+.Navbar .navlinks ul li ul li:hover{
+    background-color: #776;
+}
 .Navbar .soicallink{
     color: white;
     font-size: 26px;
@@ -59,32 +82,7 @@
     cursor: pointer;
     position: relative;
 }
-.Navbar .navlinks ul li ul{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.048), 0 3px 6px ;
-background-color: black;
-    position: absolute;
-    top: 40px;
-    
-    display: none;
 
-}
-.Navbar .navlinks ul li ul li{
-    width: 100%;
-}
-.Navbar .navlinks ul li ul li a {
-    color:white;
-    line-height: 50px;
-    padding: 0px 30px;
-}
-.Navbar .navlinks ul li ul li a:hover{
-   color: #776;
-}
-.Navbar .navlinks ul li:hover ul {
-    display: flex; /* Show the dropdown on hover */
-}
 .Navbar .menu{
     display: none;
     border: none;
