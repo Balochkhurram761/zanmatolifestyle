@@ -47,7 +47,13 @@ const [loginToggle,setloginToggle]=useState(false)
 
                   </ul>
                   </li>
-                  <li><a href=""className={currentnavbar==="Jewellery" ? styles.active :""} onClick={()=>handlecurrentnavbar("Jewellery")} >Jewellery</a></li>
+                  <li><a href=""className={currentnavbar==="Jewellery" ? styles.active :""} onClick={()=>handlecurrentnavbar("Jewellery")} >Jewellery</a>
+                  <ul>
+                      <li><a href="">Gents  Jewellery </a></li>
+                      <li><a href="">Ladies Jewellery </a></li>
+
+                  </ul>
+                  </li>
                   <li><a href="" className={currentnavbar==="Services" ? styles.active :""} onClick={()=>handlecurrentnavbar("Contact")} > Services</a></li>
                   <li><Link to="https://wa.me/923001234567" className={currentnavbar==="Contact" ? styles.active :""} onClick={()=>handlecurrentnavbar("Contact")} >  Contact</Link></li>
                   

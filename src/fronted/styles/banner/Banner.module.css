@@ -1,0 +1,70 @@
+.banner{
+    position: relative;
+}
+.banner img{
+   
+    width: 100%;
+    height: 20%;
+    display: block;
+    object-fit: cover;
+}
+.banner .overlay{
+    background: linear-gradient(#bf8f00 5%, #06060ce6 10%);
+    background: linear-gradient(180deg, rgba(0, 0, 0, .45) 15%, rgba(0, 0, 0, .76) 52%);
+    color: #fff;
+    height: 100%;
+    left: 0;
+    padding: 20px;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 100%;
+}
+.banner .cardbody{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+        position: absolute;
+    transform: translate(-50%);
+    top: 35%;
+    left: 50%;
+    gap: 20px;
+}
+.banner .cardbody h1{
+    color: white;
+    font-size: 4vw;
+    font-weight: 600;
+    line-height: 60px;
+     font-family: Bebas Neue, sans-serif;
+}
+.banner .cardbody h1 span{
+   
+    color: red;
+   
+}
+.banner .btn { 
+   
+    width: 120px;
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+ border: 1px solid white;
+ color: white;
+  border-radius: 0px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  
+}
+.banner .btn a {
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+.banner .btn:hover {
+    transform: translateY(-7px);
+    text-decoration: underline;
+    background-color: red;
+    border: 1px solid red;
+    
+}

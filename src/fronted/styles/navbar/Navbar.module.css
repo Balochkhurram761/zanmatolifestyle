@@ -65,11 +65,10 @@
    transition: all 0.3s ease-in-out;
    opacity: 0;
 }
-.Navbar .navlinks ul:hover li ul {
+.Navbar .navlinks ul li:hover >ul    {
     display: block;
     opacity: 1;
     
-
 }
 .Navbar .navlinks ul li ul li:hover{
     background-color: #776;
