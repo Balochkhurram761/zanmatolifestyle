@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import styles from '../../styles/login/Login.module.css'
 import { BiShowAlt } from "react-icons/bi";
 import { BiSolidHide } from "react-icons/bi";
@@ -14,8 +14,22 @@ const Login = ({closelogin}) => {
     const handleregister=()=>{
         setisRegister(!isRegister)
     }
+   useEffect(() => {
+    if (closelogin) {
+      document.body.style.overflow = 'hidden';  // Disable scroll
+    } else {
+      document.body.style.overflow = 'auto';    // Enable scroll
+    }
+
+    // Cleanup when component unmounts
+    return () => {
+      document.body.style.overflow = 'auto';
+    };
+  }, [closelogin]);
   return (
     <>
+   
+  
     {isRegister ? (
     <div className={`${styles.form} ${closelogin ? styles.show : styles.hide} `}>
        <div className={styles.close}>

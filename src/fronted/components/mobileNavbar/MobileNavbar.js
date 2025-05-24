@@ -16,6 +16,18 @@ const MobileNavbar = ({onclose}) => {
       [menu]:!prev[menu]
     }))
   }
+   useEffect(() => {
+      if (onclose) {
+        document.body.style.overflow = 'hidden';  // Disable scroll
+      } else {
+        document.body.style.overflow = 'auto';    // Enable scroll
+      }
+  
+      // Cleanup when component unmounts
+      return () => {
+        document.body.style.overflow = 'auto';
+      };
+    }, [onclose]);
   return (
     <div className= {`${styles.nav} ${onclose ? styles.show : styles.hide} `}>
       <div className={styles.close} onClick={(()=>onclose(false))}>
