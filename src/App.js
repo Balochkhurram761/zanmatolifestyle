@@ -1,15 +1,16 @@
 import React from 'react'
 import Navbar from './fronted/components/navbar/Navbar'
-import MobileNavbar from './fronted/components/mobileNavbar/MobileNavbar'
 import { Route, Routes } from 'react-router-dom'
 import Home from './fronted/pages/home/Home'
+import Glasses from './fronted/pages/glasses/Glasses'
 const App = () => {
   return (
     <>
-   <Navbar/>
+    <Navbar/>
    <Routes>
-    <Route path='/' element={<Home/>} ></Route>
-   </Routes>
+  <Route path='/' element={<Home />} />
+  <Route path='/glasses' element={<Glasses />} />
+</Routes>
    
    </>
   )

@@ -34,13 +34,13 @@ const [loginToggle,setloginToggle]=useState(false)
 
           </div>
           <div className={styles.image}>
-              <img src="/AssestImage/logo (3).png" alt="" />
+           <Link to="/">   <img src="/AssestImage/logo (3).png" alt="" /></Link>
           </div>
 
           <div className={styles.navlinks}>
               <ul>
-                  <li><a href=""  className={currentnavbar==="Home" ? styles.active :""} onClick={()=>handlecurrentnavbar("Home")} >Home</a></li>
-                  <li><a href="" className={currentnavbar==="Glasses" ? styles.active :""} onClick={()=>handlecurrentnavbar("Glasses")} >Glasses</a>
+                  <li><Link to="/"  className={currentnavbar==="Home" ? styles.active :""} onClick={()=>handlecurrentnavbar("Home")} >Home</Link></li>
+                  <li><Link to="/glasses" className={currentnavbar==="Glasses" ? styles.active :""} onClick={()=>handlecurrentnavbar("Glasses")} >Glasses</Link>
                     <ul>
                       <li><a href="">Gents Glasses </a></li>
                       <li><a href="">Ladies Glasses </a></li>
