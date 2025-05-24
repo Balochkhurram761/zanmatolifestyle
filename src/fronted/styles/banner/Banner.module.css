@@ -100,6 +100,20 @@
   height: 100%;
   object-fit: cover;
 }
+:global(.swiper-button-next),
+:global(.swiper-button-prev) {
+  color: white !important;
+  font-size: 24px;
+  z-index: 10;
+}
+:global(.swiper-pagination-bullet) {
+  background: white !important;
+  opacity: 1;
+}
+
+:global(.swiper-pagination-bullet-active) {
+  background: white !important;
+}
 
 
 @media only screen and (max-width: 1061px) {
