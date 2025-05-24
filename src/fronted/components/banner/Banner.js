@@ -5,6 +5,7 @@ const Banner = () => {
     <div className={styles.banner}>
         <div className={styles.img}>
             <img src="/AssestImage/jewellery.jpg" alt="" />
+            <img src="/AssestImage/jewellery2.jpg" alt="" />
 
         </div>
         <div className={styles.overlay}>
