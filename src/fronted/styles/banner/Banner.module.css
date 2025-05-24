@@ -29,13 +29,13 @@
     transform: translate(-50%);
     top: 35%;
     left: 50%;
-    gap: 10px;
+    gap: 7px;
 }
 .banner .cardbody h1{
     color: white;
     font-size: 5vw;
     font-weight: 600;
-    line-height: 60px;
+    line-height:70px;
      font-family: Bebas Neue, sans-serif;
 }
 .banner .cardbody h2{
@@ -149,10 +149,28 @@
     font-size: 4.4vw;
 }
 .banner .btn{
-    width: 120px;
+    width: 110px;
 }
 .banner .btn a{
     font-size: 14px;
 }
 }
 
+@media only screen and (max-width: 383px) {
+    
+.banner .cardbody h1{
+    font-size: 8.1vw;
+}
+.banner .cardbody h2{
+    font-size: 4.4vw;
+}
+  
+.banner .btn{
+    padding: 10px 10px;
+    width: 106px;
+}
+.banner .btn a{
+
+    font-size: 13px;
+}
+}
